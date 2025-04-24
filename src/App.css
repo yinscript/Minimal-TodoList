@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #191A19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #f2f2f2;
+  font-size: 1.7rem;
+  margin-left: 10px;
+}
+
+.App {
+  text-align: center;
+}
+
+.TodoWrapper {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 700px;
+  max-width: 100vw;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .TodoWrapper {
+    width: 90vw;
+  }
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px dotted #7c7c7c;
+  padding-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.Todo p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px;
+  display: block;
+  color: inherit;
+}
+
+.light-mode .Todo p {
+  color: #191A19;
+}
+
+.dark-mode .Todo p {
+  color: #c6c6c6;
+}
+
+.todo-btn {
+  display: none;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c6c6c6;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px dotted #7c7c7c;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 700px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.check-icon {
+  color: #4E9F3D;
+  display: inline-block;
+  padding: 1px;
+  width: 0.75em;
+  height: 0.75em;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1.5px solid #4E9F3D;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right: 0.50rem;
+}
+
+.fa-trash, .move-up-icon {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.completed {
+  color: #6f6f6f;
+  text-decoration: line-through;
+  text-decoration-color: #4E9F3D;
+  cursor: pointer;
+}
+
+body.dark-mode .completed {
+  color: #6f6f6f;
+  text-decoration: line-through;
+  text-decoration-color: #4E9F3D;
+}
+
+body.light-mode .completed {
+  color: #6f6f6f;
+  text-decoration: line-through;
+  text-decoration-color: #4E9F3D;
+}
+
+.edit-icon,
+.delete-icon,
+.move-icon,
+.move-up-icon {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.move-icon:hover,
+.move-up-icon:hover {
+  color: #4E9F3D;
+}
+
+.delete-icon:hover {
+  color: #F7374F;
+}
+
+.edit-icon:hover {
+  color: #80C4E9;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: inherit;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+/* Light Mode */
+body.light-mode .footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid #b7b7b7;
+}
+
+/* Dark Mode */
+body.dark-mode .footer {
+  background-color: #121212;
+  color: #c6c6c6;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #f2f2f2;
+  color: #121212;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f2f2f2;
+}
+
+/* Header */
+.header {
+  background-color: #f2f2f2;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+body.dark-mode .header {
+  background-color: #121212;
+  color: #c6c6c6;
+}
+
+.title {
+  font-size: 2rem;
+  color: inherit;
+}
+
+.theme-toggle-btn {
+  border: 0;
+  background: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+/* Light Mode Button Icon */
+body.light-mode .theme-toggle-btn svg {
+  color: #191A19; 
+}
+
+/* Dark Mode Button Icon */
+body.dark-mode .theme-toggle-btn svg {
+  color: #cccccc; /* light gray moon color */
+}
+
+/* TodoWrapper specific styles */
+.TodoWrapper {
+  padding: 20px;
+}
+
+body.light-mode .TodoWrapper {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+body.dark-mode .TodoWrapper {
+  background-color: transparent;
+}
+
