@@ -15,7 +15,7 @@ This one's also my first React App! ⚛
 - Edit and Delete tasks
 - Move tasks up and down
 - Minimalist UI
-- Fully responsive design
+- Responsive design
 
 ## Tech Stack
 
