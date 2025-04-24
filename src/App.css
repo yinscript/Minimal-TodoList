@@ -76,7 +76,6 @@ body {
   text-overflow: ellipsis;
   max-width: 500px;
   display: block;
-  color: inherit;
 }
 
 .light-mode .Todo p {
@@ -148,7 +147,7 @@ body {
 }
 
 .completed {
-  color: #6f6f6f;
+  color: #6f6f6f !important;
   text-decoration: line-through;
   text-decoration-color: #4E9F3D;
   cursor: pointer;
