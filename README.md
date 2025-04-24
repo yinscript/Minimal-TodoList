@@ -22,6 +22,7 @@ This one's also my first React App! ⚛
 - React.js
 - Vanilla CSS
 - JSON LocalStorage
+- Deployed in Vercel
 
 ## Contribution
 
