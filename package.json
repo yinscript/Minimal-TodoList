@@ -1,5 +1,5 @@
 {
-  "name": "todolistreactapp",
+  "name": "minimal-todolist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,7 +43,5 @@
     ]
   },
   "devDependencies": {
-    "react-refresh": "^0.17.0",
-    "vite": "^6.3.3"
   }
 }
