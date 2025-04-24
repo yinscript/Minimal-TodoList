@@ -26,11 +26,13 @@ export const TodoWrapper = () => {
     };
 
     const toggleComplete = (id) => {
-        setTodos(
-            todos.map(todo =>
+        setTodos((prevTodos) => {
+            const updatedTodos = prevTodos.map(todo =>
                 todo.id === id ? { ...todo, completed: !todo.completed } : todo
-            )
-        );
+            );
+            localStorage.setItem('todos', JSON.stringify(updatedTodos));
+            return updatedTodos;
+        });
     };
 
     const editTodo = (id) => {

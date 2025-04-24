@@ -152,6 +152,7 @@ body {
   text-decoration: line-through;
   text-decoration-color: #4E9F3D;
   cursor: pointer;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
 }
 
 body.dark-mode .completed {
