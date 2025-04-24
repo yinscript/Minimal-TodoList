@@ -7,6 +7,10 @@ This one's also my first React App! ⚛
 ![TodoList App Screenshot](public/darkMode.png)
 ![TodoList App Screenshot](public/lightMode.png)
 
+## Mobile View
+
+![TodoList App Screenshot](public/mobile.png)
+
 ## Features
 
 - Light and Dark mode
