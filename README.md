@@ -9,7 +9,7 @@ This one's also my first React App! ⚛
 
 ## Mobile View
 
-![TodoList App Screenshot](public/mobile.png)
+![TodoList App Screenshot](public/mobile.jpeg)
 
 ## Features
 
