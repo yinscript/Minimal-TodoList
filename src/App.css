@@ -55,6 +55,19 @@ body {
   width: 100%;
   color: inherit;
   font-size: 1.5rem;
+  resize: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .todo-input {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .todo-input {
+    font-size: 0.8rem;
+  }
 }
 
 .Todo p {
@@ -91,8 +104,24 @@ body {
   max-width: 700px;
   font-size: 1.2rem;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+}
+
+@media only screen and (max-width: 700px) {
+  .Todo {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Todo {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .Todo {
+    font-size: 0.8rem;
+  }
 }
 
 .check-icon {
